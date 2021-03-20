@@ -3,7 +3,7 @@
 int main()
 {
 	// using namespace baekjoon :: 
-	baekjoon::조건문::p_2884();
+	//baekjoon::p1271();
 
 	return 0;
 }

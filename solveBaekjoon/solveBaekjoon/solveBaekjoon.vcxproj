@@ -139,14 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="1330 두 수 비교하기.cpp" />
-    <ClCompile Include="14681 사분면 고르기.cpp" />
-    <ClCompile Include="2588 곱셈.cpp" />
-    <ClCompile Include="2753 윤년.cpp" />
-    <ClCompile Include="2884 알람 시계.cpp" />
-    <ClCompile Include="9498 시험 성적.cpp" />
     <ClCompile Include="solveBaekjoon.cpp" />
-    <ClCompile Include="10171 고양이.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="solveBaekjoon.h" />

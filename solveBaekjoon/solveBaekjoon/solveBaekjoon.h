@@ -6,14 +6,14 @@ using namespace std;
 namespace baekjoon {
 
 	namespace 출력 {
-		void cat();
-		void multiple();
+		//void cat();
+		//void multiple();
 	}
 	namespace 조건문 {
-		void p_1330();
-		void p_9498();
-		void p_2753();
-		void p_14681();
-		void p_2884();
+		//void p_1330();
+		//void p_9498();
+		//void p_2753();
+		//void p_14681();
+		//void p_2884();
 	}
 }
