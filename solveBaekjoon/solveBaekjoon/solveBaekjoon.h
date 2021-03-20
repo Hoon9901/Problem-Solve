@@ -1,9 +1,16 @@
 #pragma once
 #include <iostream>
+#include <string>
 using namespace std;
 
 // 사용자 정의 함수
 namespace baekjoon {
+
+	/*void p1032();
+	void p1110();
+	void p1143();*/
+	//void p1157();
+	void p1236();
 
 	namespace 출력 {
 		//void cat();

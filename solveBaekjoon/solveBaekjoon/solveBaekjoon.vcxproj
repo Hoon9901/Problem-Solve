@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="1236 성지키기.cpp" />
     <ClCompile Include="solveBaekjoon.cpp" />
   </ItemGroup>
   <ItemGroup>
