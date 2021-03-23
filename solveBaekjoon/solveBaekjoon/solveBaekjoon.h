@@ -21,6 +21,7 @@ namespace baekjoon {
 	//void p2438();
 	//void p2439();
 	//void p10871();
+	void p2669();
 
 	namespace Ãâ·Â {
 		//void cat();
