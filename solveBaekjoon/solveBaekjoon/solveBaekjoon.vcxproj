@@ -139,7 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="2669 직사각형 네개의 합집합의 면적 구하기.cpp" />
+    <ClCompile Include="2577 숫자의 개수.cpp" />
     <ClCompile Include="solveBaekjoon.cpp" />
   </ItemGroup>
   <ItemGroup>
