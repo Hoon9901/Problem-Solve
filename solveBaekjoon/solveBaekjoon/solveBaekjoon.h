@@ -23,6 +23,11 @@ namespace baekjoon {
 	//void p2439();
 	//void p10871();
 	//void p2669();
+	/*void p1075();*/
+	//void p3052(); // GOOD STUDY, 같은 수 있을시 (중복) 어떻게 처리하는지.
+	//void p1546(); 
+	//void p8958(); // 문자 접근법
+	void p4344(); // 
 
 	namespace 출력 {
 		//void cat();

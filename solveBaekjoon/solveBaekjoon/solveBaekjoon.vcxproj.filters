@@ -18,7 +18,7 @@
     <ClCompile Include="solveBaekjoon.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="2577 숫자의 개수.cpp">
+    <ClCompile Include="4344 평균은 넘겠지.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
