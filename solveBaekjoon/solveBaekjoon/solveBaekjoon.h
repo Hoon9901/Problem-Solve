@@ -28,7 +28,8 @@ namespace baekjoon {
 	//void p1546(); 
 	//void p8958(); // 문자 접근법
 	//void p4344(); // 
-	void p15996();
+	//void p15996();
+	void p4673();
 
 	namespace 출력 {
 		//void cat();

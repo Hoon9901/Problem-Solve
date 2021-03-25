@@ -139,7 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="4344 평균은 넘겠지.cpp" />
+    <ClCompile Include="4673 셀프 넘버.cpp" />
     <ClCompile Include="solveBaekjoon.cpp" />
   </ItemGroup>
   <ItemGroup>
