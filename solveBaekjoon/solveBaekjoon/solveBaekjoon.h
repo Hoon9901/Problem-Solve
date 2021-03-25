@@ -27,7 +27,8 @@ namespace baekjoon {
 	//void p3052(); // GOOD STUDY, 같은 수 있을시 (중복) 어떻게 처리하는지.
 	//void p1546(); 
 	//void p8958(); // 문자 접근법
-	void p4344(); // 
+	//void p4344(); // 
+	void p15996();
 
 	namespace 출력 {
 		//void cat();
