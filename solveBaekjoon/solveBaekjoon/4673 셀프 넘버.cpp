@@ -50,7 +50,7 @@ int d(int n) {
 // 4는 2+2 = 4 이므로 num[4] = 1
 void baekjoon::p4673() {
 	int n = 0; // start number
-	static int Nums[10001] = { 0 };  // 0~10000 까지 탐색
+	static int Nums[10001] = { 0 };  // 0~10000 까지 탐색,
 	for (int i = 0; i <= 10000; i++) {
 		Nums[d(i)] = 1; 
 		if (!Nums[i]) { // 셀프넘버
