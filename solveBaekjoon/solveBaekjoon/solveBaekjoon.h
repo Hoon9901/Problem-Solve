@@ -29,7 +29,7 @@ namespace baekjoon {
 	//void p8958(); // 문자 접근법
 	//void p4344(); // 
 	//void p15996();
-	void p4673();
+	//void p4673();
 	//void p1065(); // 한수
 	//void p11654();
 

@@ -139,7 +139,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="4673 셀프 넘버.cpp" />
     <ClCompile Include="solveBaekjoon.cpp" />
   </ItemGroup>
   <ItemGroup>
