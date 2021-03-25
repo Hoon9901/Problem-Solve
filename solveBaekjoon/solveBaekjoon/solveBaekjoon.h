@@ -32,6 +32,9 @@ namespace baekjoon {
 	//void p4673();
 	//void p1065(); // 한수
 	//void p11654();
+	//void p10809(); // fill_n(초기화할 배열, 길이, 값) 초기화
+	//void p2675();
+	void p1152();
 
 	namespace 출력 {
 		//void cat();
