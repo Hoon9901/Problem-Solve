@@ -1,7 +1,7 @@
 #include "solveBaekjoon.h"
 
 void baekjoon::p2475() {
-	int n[8]; // 8개의 숫자
+	int n[8]; // 8개의 숫자, 1~8까지 한번씩만 등장
 	int ans = 0;
 	for (int i = 0; i < 8; i++) {
 		cin >> n[i];
