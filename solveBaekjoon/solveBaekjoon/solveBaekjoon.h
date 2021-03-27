@@ -34,7 +34,12 @@ namespace baekjoon {
 	//void p11654();
 	//void p10809(); // fill_n(초기화할 배열, 길이, 값) 초기화
 	//void p2675();
-	void p1152();
+	//void p1152();
+	//void p2908(); // use string += operator, char to int
+	// void p5622();
+	//void p2941();
+	//void p1316(); // 문자 중복처리, 연속적이다가 비연속 문자일시 그룹단어
+	void p2475();
 
 	namespace 출력 {
 		//void cat();
