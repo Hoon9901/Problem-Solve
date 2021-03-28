@@ -1,7 +1,5 @@
 #pragma once
-#include <iostream>
-#include <string>
-#include <cstring>
+#include<bits/stdc++.h> //
 using namespace std;
 
 // 사용자 정의 함수
@@ -36,10 +34,12 @@ namespace baekjoon {
 	//void p2675();
 	//void p1152();
 	//void p2908(); // use string += operator, char to int
-	// void p5622();
+	//void p5622();
 	//void p2941();
 	//void p1316(); // 문자 중복처리, 연속적이다가 비연속 문자일시 그룹단어
-	void p2475();
+	//void p2475();
+	//void p1018();   // 브루트포스 체스 판 재색칠
+	void p1712();
 
 	namespace 출력 {
 		//void cat();

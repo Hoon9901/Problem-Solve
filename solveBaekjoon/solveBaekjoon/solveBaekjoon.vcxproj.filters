@@ -18,7 +18,7 @@
     <ClCompile Include="solveBaekjoon.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="2920 음계.cpp">
+    <ClCompile Include="1712 손익분기점.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
