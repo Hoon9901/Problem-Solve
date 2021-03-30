@@ -39,7 +39,9 @@ namespace baekjoon {
 	//void p1316(); // 문자 중복처리, 연속적이다가 비연속 문자일시 그룹단어
 	//void p2475();
 	//void p1018();   // 브루트포스 체스 판 재색칠
-	void p1712();
+	// 수학 알고리즘
+	//void p1712();
+	void p2292();
 
 	namespace 출력 {
 		//void cat();
