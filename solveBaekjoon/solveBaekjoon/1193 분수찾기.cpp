@@ -4,18 +4,18 @@ void baekjoon::p1193() {
 	int	x;		// x번째 분수
 	cin >> x;
 	int sumXdiff = 0;	// sum은 갯수이고 x를 뺴면 그 라인에 몇번째인지 나온다
-	int i = 1;
+	int i = 0;
 	// 1부터 i번째까지의 분수가 몇개있는지 셈.
 	for (int sum = 0; sum + i < x; i++) {
 		sum += i;
 		sumXdiff = x - sum;
 	}
 	if (i % 2 == 1) {	// 홀수
-		cout << i - sumXdiff + 1 << '/' << sumXdiff;
+		cout << i - sumXdiff + 1 << "/" << sumXdiff;
 	}
 	else {				// 짝수
-		cout << sumXdiff << '/' << i - sumXdiff + 1;
-	}// 3, 2
+		cout << sumXdiff << "/" << i - sumXdiff + 1;
+	}
 }
 
 // sum += i;
