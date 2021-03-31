@@ -4,6 +4,6 @@
 int main()
 {
 	// using namespace baekjoon :: 
-	baekjoon::p1193();
+	baekjoon::p2869();
 	return 0;
 }

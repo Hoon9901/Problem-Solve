@@ -41,7 +41,8 @@ namespace baekjoon {
 	// 수학 알고리즘
 	//void p1712();
 	//void p2292();
-	void p1193();
+	//void p1193();
+	void p2869();
 
 	namespace 출력 {
 		//void cat();
