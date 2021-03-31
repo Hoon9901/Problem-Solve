@@ -4,7 +4,6 @@ using namespace std;
 
 // 사용자 정의 함수
 namespace baekjoon {
-
 	/*void p1032();
 	void p1110();
 	void p1143();*/
@@ -41,7 +40,8 @@ namespace baekjoon {
 	//void p1018();   // 브루트포스 체스 판 재색칠
 	// 수학 알고리즘
 	//void p1712();
-	void p2292();
+	//void p2292();
+	void p1193();
 
 	namespace 출력 {
 		//void cat();
