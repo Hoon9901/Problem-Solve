@@ -3,6 +3,9 @@
 using namespace std;
 
 // 사용자 정의 함수
+namespace SwExpert {
+	void p1868();
+}
 namespace baekjoon {
 	/*void p1032();
 	void p1110();
@@ -42,7 +45,8 @@ namespace baekjoon {
 	//void p1712();
 	//void p2292();
 	//void p1193();
-	void p2869();
+	/*void p2869();*/
+	//void p10250();
 
 	namespace 출력 {
 		//void cat();

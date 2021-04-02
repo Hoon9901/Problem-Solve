@@ -1,9 +1,8 @@
 ﻿#include "solveBaekjoon.h"
 
-
 int main()
 {
 	// using namespace baekjoon :: 
-	baekjoon::p2869();
+	SwExpert::p1868();
 	return 0;
 }
