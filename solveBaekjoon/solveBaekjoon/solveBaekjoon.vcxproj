@@ -139,7 +139,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="1868  지뢰찾기.cpp" />
     <ClCompile Include="solveBaekjoon.cpp" />
   </ItemGroup>
   <ItemGroup>
