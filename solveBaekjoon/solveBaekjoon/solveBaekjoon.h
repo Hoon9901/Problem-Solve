@@ -47,7 +47,8 @@ namespace baekjoon {
 	//void p1193();
 	/*void p2869();*/
 	//void p10250();
-	//void p10757();		// 큰 수
+	//void p10757();		// 큰 수 다시풀어볼거
+	void p1259();
 
 	namespace 출력 {
 		//void cat();
