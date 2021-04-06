@@ -22,8 +22,7 @@ bool IsPalindromeNum(string num) {
 		if (num[i] != num[num.length() - 1 - i]) {
 			return false;
 		}
-	}
-	return true;
+	}	return true;
 }
 
 // 앞에서 읽거나 뒤에서 읽어도 같은거
