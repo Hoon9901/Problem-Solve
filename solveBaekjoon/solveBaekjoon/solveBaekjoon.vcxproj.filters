@@ -18,7 +18,7 @@
     <ClCompile Include="solveBaekjoon.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="10180 최대최소.cpp">
+    <ClCompile Include="1978 소수찾기.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

@@ -50,7 +50,8 @@ namespace baekjoon {
 	//void p10757();		// 큰 수 다시풀어볼거
 	//void p1259();		// 펠린드롬수
 	//void p1920();		// 이분탐색
-	void p10180();
+	//void p10180();
+	void p1978();		// 소수찾기, 에라토스테네스의 체
 
 	namespace 출력 {
 		//void cat();
