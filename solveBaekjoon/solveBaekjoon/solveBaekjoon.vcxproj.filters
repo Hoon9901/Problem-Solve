@@ -18,7 +18,7 @@
     <ClCompile Include="solveBaekjoon.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="1978 소수찾기.cpp">
+    <ClCompile Include="2164 카드2.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

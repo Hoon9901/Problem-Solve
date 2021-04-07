@@ -2,6 +2,7 @@
 
 int cnt = 0;
 int primeNum[1001] = { false, };	// 1000 까지의 소수
+// 에라토스테네스의 체
 void IsPrimeNum(int num) {
 	// 2의 제곱, 3의 제곱, ... NUM의 제곱
 	for (int i = 2; i * i <= num; i++) {
