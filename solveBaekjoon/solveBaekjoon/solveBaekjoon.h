@@ -49,7 +49,8 @@ namespace baekjoon {
 	//void p10250();
 	//void p10757();		// 큰 수 다시풀어볼거
 	//void p1259();		// 펠린드롬수
-	void p1920();		// 이분탐색
+	//void p1920();		// 이분탐색
+	void p10180();
 
 	namespace 출력 {
 		//void cat();
