@@ -44,40 +44,13 @@ int mLcm;	// 최소공배수
 
 // 최대공약수를 구하는 함수
 void getGCD() {
-	int r1 = num1 % num2;	// 나머지 R1을 구한다.
-	if (r1 == 0) {
-		mGcd = num2; 
-		return;
+	int a = num1, b = num2;
+	while (b != 0) {
+		int r = a % b;
+		a = b;		// 0직전에 a가 나머지(gcd)
+		b = r;
 	}
-	int r2 = num2 % r1;		// 나머지 R2를 구한다.
-	if (r2 == 0) {
-		mGcd = r1; 
-		return;
-	}
-	int r3 = r1 % r2;		// R3를 구한다.
-	if (r3 == 0) {
-		mGcd = r2; 
-		return;
-	}
-	while (true) {
-		r1 = r2 % r3;
-		if (r1 == 0) {
-			mGcd = r3;
-			break;
-		}
-		r2 = r3 % r1; 
-		if (r2 == 0) {
-			mGcd = r1;
-			break;
-		}
-		r3 = r1 % r2;
-		if (r3 == 0) {
-			mGcd = r2;
-			break;
-		}
-
-	}
-	
+	mGcd = a;
 }
 
 void getLCM() {

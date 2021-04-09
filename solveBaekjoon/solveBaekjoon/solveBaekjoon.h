@@ -53,7 +53,8 @@ namespace baekjoon {
 	//void p10180();
 	//void p1978();		// 소수찾기, 에라토스테네스의 체
 	//void p2164();		// 큐
-	void p2609();		// 유클리드 호제법
+	//void p2609();		// 유클리드 호제법
+
 
 	namespace 출력 {
 		//void cat();
