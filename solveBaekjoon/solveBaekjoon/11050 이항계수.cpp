@@ -1,11 +1,11 @@
-﻿#include <bits/stdc++.h>
-/*
-#include <iostream>
+﻿#include <iostream>
+#include <string>
 #include <deque>
 #include <vector>
 #include <queue>
+#include <stack>
 #include <algorithm>
-*/
+
 using namespace std;
 
 #define ONLINE_JUDGE		// if you use online judge you must write this code
@@ -24,31 +24,9 @@ using namespace std;
 /*
 * 전역변수
 */
-int N, M;			// N : 카드 개수 M : 목적지
-int cards[101];		// 카드가 쓰여 있는 수의 집합
-int result;
-
-//int userCards[3];
-void findCard() {
-	int range = 3000001;
-	for (int i = 0; i < N - 2; i++) {
-		int sum = cards[i];
-		// 카드 3개를 택한다
-		for (int j = i+1; j < N - 1; j++){
-			for (int k = j + 1; k < N; k++) {
-				sum = cards[i] + cards[j] + cards[k];
-				// M에 가까울때..
-				if (M - sum < range && M - sum >= 0) {
-					range = M - sum;
-					result = sum;
-				}
-			}
-		}
-		if (range == 0)	// 바로 종료
-			break;
-	}
-	hOut(result);
-}
+int N, K;
+int factorial();
+int get_bino_coef();
 
 int main()
 {
@@ -59,13 +37,28 @@ int main()
 	freopen("input.txt", "r", stdin);
 	//freopen("output.txt", "w", stdout);	// 출력이 너무 길때 사용
 #endif // ! ONLINE_JUDGE
-	hIn(N);			// 3 <= N <= 100
-	hIn(M);			// 10 <= M <= 300,000 
-	// N장의 카드에 써져 있는 숫자가 주어졌을 때, M을 넘지 않으면서 
-	// M에 최대한 가까운 카드 3장의 합을 구해 출력하시오.
-	hforIn(cards, N);
 
-	findCard();
+	cin >> N >> K;
+	cout << get_bino_coef();
 
 	return 0;
 }
+
+int factorial(int num){
+	int result = 1;
+	for (int i = 2; i <= num; i++){
+		result *= i;
+	}
+	return result;
+}
+
+int get_bino_coef(){
+	if (K < 0)
+		return 0;
+	else if (K > N)
+		return 0;
+	
+	return factorial(N) / (factorial(N - K) * factorial(K));
+}
+
+// nCk = n! / (n-k)!k! 6C2 = 6! / 4!*2*
