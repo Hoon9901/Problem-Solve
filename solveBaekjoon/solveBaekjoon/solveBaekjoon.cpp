@@ -31,35 +31,24 @@ int main()
 	//freopen("output.txt", "w", stdout);	// 출력이 너무 길때 사용
 #endif // ! ONLINE_JUDGE
 	int N;
-	hIn(N); // 1 <= n <= 100,000S
+	cin >> N;
 
-	queue <int> seq; // 목표 수열
+	int movie = 666;
+	int i = 0;
+	// 666은 무조건 한번만 들어가야함.
+	while (true) {
+		string strMovie = to_string(movie);
 
-	for (int i = 0; i < N; i++) {
-		int temp;
-		cin >> temp;
-		seq.push(temp);
-	}
-	// 1부터 N 까지
-	int i = 1;
-	stack<int> m_stack; // 스택
-	queue<int> result;// 결과
-	
-
-	do{
-		m_stack.push(i);
-		if (m_stack.top() == seq.front()) {
-			result.push(i);
-			
-			m_stack.pop();
-			seq.pop();
-		}
-		else {
+		if (strMovie.find("666") != -1) { // 문자열에 "666"이 포함되어있으면 i를 증가
 			i++;
 		}
-		cout << m_stack.top() << endl;
-		
-	} while (!m_stack.empty());
+		// n번째
+		if (i == N) {
+			cout << movie << endl;
+			break;
+		}
+		movie++; // 브루트 포스
+	}
 
 	return 0;
 }
