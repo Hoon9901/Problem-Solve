@@ -21,6 +21,12 @@ using namespace std;
 #define pairInt pair<int, int>
 #define tlong long long
 
+bool compare(const pairInt & p1, pairInt & p2){
+	if (p1.second == p2.second) // 빈도수 같으면
+		return p1.first < p2.first; // 숫자가 작은거를 앞으로
+	return p1.second > p2.second;	// 빈도수 큰게 앞으로
+}
+
 int main()
 {
 	ios_base::sync_with_stdio(false);
@@ -30,69 +36,64 @@ int main()
 	freopen("input.txt", "r", stdin);
 	//freopen("output.txt", "w", stdout);	// 출력이 너무 길때 사용
 #endif // ! ONLINE_JUDGE
-	int N, M, B;
-	int map[500][500];
-	cin >> N >> M >> B;
-	for (int i = 0; i < N; i++) {
-		for (int j = 0; j < M; j++) {
-			cin >> map[i][j];
-		}
-	}
-	// 0~256 브루트포스 
-	int time = 0x7f7f7f7f;
-	int maxHeight = 0;
-	for (int height = 0; height < 257; height++) {
-		int buildBlock = 0; // 채울 블록
-		int removeBlock = 0; // 지울 블록
-		for (int i = 0; i < N; i++) {
-			for (int j = 0; j < M; j++) {
-				// 지워야할 블록 개수
-				int needBlock = map[i][j] - height; // 한 타일의 높이 - 현재 높이 -> 필요한 블록
-				if (needBlock > 0) { // 양수면 지워야함
-					removeBlock += needBlock;
-				}
-				else if (needBlock < 0) { // 음수면 채워야함
-					buildBlock -= needBlock;
-				}
-			}
-		}
-		// 시간 계산
-		if ((removeBlock + B) >= buildBlock) { // -> 전체 탐색이므로 쓸데없는 연산 제외 (256높이에서 채워야되면 소요시간은 안되도록)
-			int temp = removeBlock * 2 + buildBlock;
-			if (time >= temp) {// 더 적은 소요시간으로 갱신
-				time = temp;
-				maxHeight = height;
-			}
-		}
-	}
-	// answer
-	cout << time << ' ' << maxHeight << endl;
+	int N;		// 수의 개수
+	double avg = 0;	// 평균
+	int midVal = 0;	// N개의 수들중 그 중앙에 위치한 값
+	int sameVal = 0;	// N개의 수들중 가장 많이 나타는 값
+	int range = 0;	// 최대값과 최소값의 차이
+	int min = 0x7f7f7f7f, max = -0x7f7f7f7f; // 최소값, 최대값
 
+	cin >> N;
+	vector<int>numlist;
+	for (int i = 0; i < N; i++) {
+		int num;
+		cin >> num;
+		numlist.push_back(num);
+		avg += num;
+	}
+	avg = (int)floor((avg/N) + 0.5);
+	
+	sort(numlist.begin(), numlist.end());
+	range = numlist.back() - numlist.front();
+	midVal = numlist[N / 2];
+
+	vector<pairInt> vNumlist; // 숫자, 빈도수
+	
+	for (int i = 0; i < N; i++) {
+		// vector가 
+		if (vNumlist.empty()) {
+			vNumlist.push_back(make_pair(numlist[i], 1));
+			continue;
+		}
+
+		// 같은 숫자가 있다면
+		if (vNumlist.back().first == numlist[i])
+		{
+			pairInt temp = vNumlist.back();	// 빈도수 갱신
+			temp.second++;
+			
+			vNumlist.pop_back();
+			vNumlist.push_back(temp);	// 갱신한 pair push
+		}
+		else {
+			// 같은게 없으면 추가
+			vNumlist.push_back(pairInt(numlist[i], 1));
+		}
+	}
+
+	sort(vNumlist.begin(), vNumlist.end(), compare);
+	// 최빈값이 여러개 있을때, 두번째로 작은 값 출력
+	if (N > 1) {
+		vNumlist[0].second == vNumlist[1].second ? sameVal = vNumlist[1].first : sameVal = vNumlist[0].first;
+	}
+	else {
+		sameVal = vNumlist[0].first;
+	}
+	
+
+	cout << avg << '\n';
+	cout << midVal << '\n';
+	cout << sameVal << '\n';
+	cout << range << '\n';
 	return 0;
 }
-
-/*
-
-1. 좌표 (i,j)의 가장위 블록을 제가하여 인벤토리 넣는다
-2초 소모
-
-2. 인벤토리에서 블록 하나를 꺼내 좌표 (i,j)의 가장 위에 있는 블록 위에 놓는다.
-1초 소모
-
-최소 높이 0 부터 256까지 반복
-채울 블록개수
-지울 블록개수
-맵의 한타일 높이 - 반복문 높이(0부터 256까지) > 0 (양수)
--> 지워야할 블록 개수
-그외 -> 채워야할 블록 개
-
-만약 256높이까지 브루트포스 하면...
-
-256높이에서 000001 맵을 채우면 256개 다 채우고 할려하니..
-쓸데없는 시간 측정을 하게 되므로.
-밑 조건문을 추가해서 시간갱신을 내부에서 돌린다.
-조건 (지운 블록개수 + 인벤 블록 개수) >= 채운 블록 개수
--> 소요시간 : 지울 블록개수 * 2 + 채울 블록 개수
-	if(소요시간 갱신)
-
-*/
