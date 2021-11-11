@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class s5_1094 {
     static Scanner scanner = new Scanner(System.in);
-    static public void main(String[] args){
+    public s5_1094 (){
         int stick = 64;
         int stickCount = 0;
         int X;  // 원하는 길이
