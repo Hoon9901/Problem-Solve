@@ -2,9 +2,9 @@ import sys
 
 N, M = map(int, sys.stdin.readline().split())
 # 상 하 좌 우 
+                #    0 1 0
 dx = [-1,1,0,0] #   0 -1 0
 dy = [0,0,-1,1] #   -1 0 1
-                #    0 1 0
 map = []
 visited = [[0] * (M) for _ in range(N)]
 
@@ -13,7 +13,6 @@ for _ in range(N) :
                
 queue = [(0, 0)] # 튜플로 좌표 넘김
 visited[0][0] = 1
-
 while queue :
     x, y = queue.pop(0)
     
